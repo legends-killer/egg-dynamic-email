@@ -1,6 +1,6 @@
 {
   "name": "egg-dynamic-email",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a dynamic email server for egg",
   "eggPlugin": {
     "name": "eggDynamicEmail"
@@ -40,7 +40,8 @@
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "index.d.ts"
   ],
   "ci": {
     "version": "8, 10"
