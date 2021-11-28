@@ -2,11 +2,10 @@
  * @Author: legends-killer
  * @Date: 2021-11-29 01:47:33
  * @LastEditors: legends-killer
- * @LastEditTime: 2021-11-29 02:50:24
+ * @LastEditTime: 2021-11-29 04:22:15
  * @Description:
  */
 import "egg";
-import { Application } from "egg";
 
 interface IReturnData {
   code: number;
@@ -27,7 +26,7 @@ declare module "egg" {
       host: string;
       password: string;
       sender: string;
-      username: string;
+      user: string;
     };
   }
 

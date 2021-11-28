@@ -45,6 +45,10 @@ exports.eggDynamicEmail = {
 ```js
 // {app_root}/config/config.default.js
 exports.eggDynamicEmail = {
+  user: '',
+  password: '',
+  host: '',
+  sender: '',
 };
 ```
 
@@ -53,10 +57,16 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
-
+```js
+// {app_root}/app/controller/home.js
+ async index() {
+   const { ctx } = this
+   const res = await ctx.app.email.sendEmail('title','content','receiver', [{data: 'html content', alternative: true}])
+ }
+```
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/legends-killer/egg-dynamic-email/issues).
 
 ## License
 
